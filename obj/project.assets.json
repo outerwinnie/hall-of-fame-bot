@@ -660,11 +660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Winnie\\Desktop\\hall-of-fame-bot\\ConfessBot.csproj",
+      "projectUniqueName": "D:\\Winnie\\Documentos\\hall-of-fame-bot\\ConfessBot.csproj",
       "projectName": "ConfessBot",
-      "projectPath": "C:\\Users\\Winnie\\Desktop\\hall-of-fame-bot\\ConfessBot.csproj",
+      "projectPath": "D:\\Winnie\\Documentos\\hall-of-fame-bot\\ConfessBot.csproj",
       "packagesPath": "C:\\Users\\Winnie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Winnie\\Desktop\\hall-of-fame-bot\\obj\\",
+      "outputPath": "D:\\Winnie\\Documentos\\hall-of-fame-bot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Winnie\\AppData\\Roaming\\NuGet\\NuGet.Config"

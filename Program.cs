@@ -52,7 +52,7 @@ namespace DiscordBot
             var postCommand = new SlashCommandBuilder()
                 .WithName("post")
                 .WithDescription("Post something anonymously")
-                .AddOption("text", ApplicationCommandOptionType.String, "The text to post", isRequired: true)
+                .AddOption("text", ApplicationCommandOptionType.String, "The text to post", isRequired: false)
                 .AddOption("file", ApplicationCommandOptionType.Attachment, "Optional file to attach", isRequired: false);
 
             // Replace 'your_guild_id_here' with your actual guild ID
@@ -77,8 +77,11 @@ namespace DiscordBot
 
                     var user = command.User; // Get the user who triggered the command
 
-                    // Log the user and the message text
-                    Console.WriteLine($"[{DateTime.Now}] {user.Username} ({user.Id}) sent: {text}");
+                    // Log the user and the message text or file information
+                    if (!string.IsNullOrWhiteSpace(text))
+                    {
+                        Console.WriteLine($"[{DateTime.Now}] {user.Username} ({user.Id}) sent: {text}");
+                    }
 
                     await command.RespondAsync("Your post has been sent!", ephemeral: true); // Responds privately
 
@@ -90,9 +93,13 @@ namespace DiscordBot
                             await command.Channel.SendFileAsync(stream, attachmentOption.Filename, text); // Sends the message with the file in the channel
                         }
                     }
+                    else if (!string.IsNullOrWhiteSpace(text))
+                    {
+                        await command.Channel.SendMessageAsync(text); // Sends the message in the channel if text is provided
+                    }
                     else
                     {
-                        await command.Channel.SendMessageAsync(text); // Sends the message in the channel
+                        await command.RespondAsync("You need to provide either text or a file.", ephemeral: true);
                     }
                 }
             }
