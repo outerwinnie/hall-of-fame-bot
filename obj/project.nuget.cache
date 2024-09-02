@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MZMWTKxAAadmNCnyAnlv/BJt4zTSOPCYtsRkVl2ErPUx0DGjkq2fB8zD4K2jS653h+/KGzj7AG/u6Rvw3qs24A==",
+  "dgSpecHash": "nVvEYynI15TnbFxZexpfyfxJnTyOvD7Zm4LAhiS+juUuzAEkJbDmX752BQ9v9PiGwghMIXCvoL2vbsEDb9k7BQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Winnie\\Desktop\\hall-of-fame-bot\\ConfessBot.csproj",
+  "projectFilePath": "D:\\Winnie\\Documentos\\hall-of-fame-bot\\ConfessBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Winnie\\.nuget\\packages\\discord.net\\3.15.3\\discord.net.3.15.3.nupkg.sha512",
     "C:\\Users\\Winnie\\.nuget\\packages\\discord.net.commands\\3.15.3\\discord.net.commands.3.15.3.nupkg.sha512",
